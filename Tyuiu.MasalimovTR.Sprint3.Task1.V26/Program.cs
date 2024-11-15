@@ -1,6 +1,6 @@
-﻿using Tyuiu.MasalimovTR.Sprint3.Task0.V7.Lib;
+﻿using Tyuiu.MasalimovTR.Sprint3.Task1.V26.Lib;
 
-namespace Tyuiu.MasalimovTR.Sprint3.Task0.V7
+namespace Tyuiu.MasalimovTR.Sprint3.Task1.V26
 {
     internal class Program
     {
@@ -10,22 +10,22 @@ namespace Tyuiu.MasalimovTR.Sprint3.Task0.V7
 
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* Спринт #3                                                               *");
-            Console.WriteLine("* Тема: for                                                              *");
-            Console.WriteLine("* Задание #0                                                              *");
-            Console.WriteLine("* Вариант #7                                                             *");
+            Console.WriteLine("* Тема: while                                                              *");
+            Console.WriteLine("* Задание #1                                                              *");
+            Console.WriteLine("* Вариант #26                                                             *");
             Console.WriteLine("* Выполнил: Масалимов Тимур Рyсланович | РППб-24-1                        *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* УСЛОВИЕ:                                                                *");
-            Console.WriteLine("* Написать программу используя цикл for, которая вычисляет сумму ряда по формуле, при a = 0,75  *");
+            Console.WriteLine("* Написать программу используя цикл while, которая вычисляет сумму ряда по формуле, при n=5  *");
             Console.WriteLine("*                                                                         *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("Результат:");
             DataService ds = new DataService();
-            double value = 0.75;
+            int value = 5;
             int startvalue = 1;
-            int stopvalue = 20;
+            int stopvalue = 8;
             double res = ds.GetSumSeries(value, startvalue, stopvalue);
-            Console.WriteLine( res );
+            Console.WriteLine(res);
         }
     }
 }
