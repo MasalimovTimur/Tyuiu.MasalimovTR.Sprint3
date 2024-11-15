@@ -6,7 +6,7 @@ namespace Tyuiu.MasalimovTR.Sprint3.Task1.V26.Lib
     {
         public double GetSumSeries(int value, int startValue, int stopValue)
         {
-            double sumSeries = 1;
+            double sumSeries = 0;
             int i;
             while (startValue <= stopValue)
             {
