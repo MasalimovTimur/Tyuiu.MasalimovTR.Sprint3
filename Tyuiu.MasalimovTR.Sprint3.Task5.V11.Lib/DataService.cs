@@ -11,10 +11,12 @@ namespace Tyuiu.MasalimovTR.Sprint3.Task5.V11.Lib
             int i, j;
             for (i = startValue1; i <= stopValue1; i++)
             {
-                for (j = startValue2; j <= stopValue2; j++) ;
+                for (j = startValue2; j <= stopValue2; j++) 
                 {
-                    sumSeries = sumSeries + (Math.Sin(startValue2) + (x/2));
+                    sumSeries = sumSeries + (Math.Sin(j) + (x/2));
+                    Console.WriteLine(sumSeries);
                 }
+                Console.WriteLine(sumSeries);
             }
             return Math.Round(sumSeries, 3);
         }
