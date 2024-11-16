@@ -8,13 +8,13 @@ namespace Tyuiu.MasalimovTR.Sprint3.Task6.V30.Lib
         {
             int x;
             int sum = 0;
-            for (x = startValue; x < stopValue; x++)
+            for (x = startValue; x <= stopValue; x++)
             {
                 for (int d = 1; d <= x; d++) 
                 {
                     if (x % d == 0)
                     {
-                        sum += d ;
+                        sum ++ ;
                     }
                 }
             }
