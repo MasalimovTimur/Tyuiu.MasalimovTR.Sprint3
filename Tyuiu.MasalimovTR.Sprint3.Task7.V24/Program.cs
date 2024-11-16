@@ -1,5 +1,6 @@
 ﻿using System.Diagnostics;
 using Tyuiu.MasalimovTR.Sprint3.Task7.V24.Lib;
+using System.IO;
 
 namespace Tyuiu.MasalimovTR.Sprint3.Task7.V24
 {
@@ -18,7 +19,8 @@ namespace Tyuiu.MasalimovTR.Sprint3.Task7.V24
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* УСЛОВИЕ:                                                                *");            
             Console.WriteLine("* КАРТИНКА                                                                *");
-            string imagePath = @"C:\Users\Timur\source\repos\Tyuiu.MasalimovTR.Sprint3\Task7v30.png";
+            string executablePath = AppContext.BaseDirectory ;
+            string imagePath = Path.Combine(executablePath, "Task7v30.png"); ;
                 Process.Start(new ProcessStartInfo
                 {
                     FileName = imagePath,
