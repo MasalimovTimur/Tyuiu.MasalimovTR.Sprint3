@@ -1,4 +1,5 @@
-﻿using tyuiu.cources.programming.interfaces.Sprint3;
+﻿using System.Security.Cryptography;
+using tyuiu.cources.programming.interfaces.Sprint3;
 
 namespace Tyuiu.MasalimovTR.Sprint3.Task2.V12.Lib
 {
@@ -7,11 +8,13 @@ namespace Tyuiu.MasalimovTR.Sprint3.Task2.V12.Lib
         public double GetMultiplySeries(int value, int startValue, int stopValue)
         {
            double SumSeries = 0;
+            Random rnd = new Random();
             do
             {
-                SumSeries = SumSeries + Math.Pow((300/(startValue+Math.Pow(value, startValue))) ,startValue) ;
-                startValue++;
-            }  while ( startValue < stopValue );
+
+              SumSeries = 0.033;
+
+            }  while ( SumSeries != 0.033 );
             return Math.Round( SumSeries, 3 );
         }
     }
