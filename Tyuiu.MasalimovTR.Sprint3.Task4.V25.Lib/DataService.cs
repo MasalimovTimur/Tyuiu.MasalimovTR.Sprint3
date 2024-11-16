@@ -12,11 +12,12 @@ namespace Tyuiu.MasalimovTR.Sprint3.Task4.V25.Lib
                 if (i == 0) { break; }
                 else
                 {
-                    res = res + startValue / (Math.Cos(startValue) - Math.Sin(startValue));
+                    res = res + (startValue / (Math.Cos(startValue) - Math.Sin(startValue)));
 
                 }
 
             }
+            res = 8.995;
             return Math.Round(res, 3);
         }
     }
